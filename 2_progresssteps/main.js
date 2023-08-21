@@ -8,7 +8,7 @@ const prevButton = document.getElementById("prev");
 // Función para actualizar la visualización de los pasos
 const updateSteps = () => {
   steps.forEach((step, index) => {
-    if (index === actualStep) {
+    if (index <= actualStep) {
       step.classList.add("active");
     } else {
       step.classList.remove("active");
